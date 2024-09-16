@@ -1,4 +1,7 @@
 package app.controller;
 
-public class ControllerInterface {
+import app.dto.UserDto;
+
+public interface ControllerInterface {
+    public void session(UserDto userDto);
 }

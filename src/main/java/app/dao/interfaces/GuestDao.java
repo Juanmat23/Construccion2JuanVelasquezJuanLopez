@@ -1,4 +1,13 @@
 package app.dao.interfaces;
 
-public class GuestDao {
+import app.dto.GuestDto;
+
+public interface GuestDao {
+
+    public void createGuest(GuestDto guestDto) throws Exception;
+
+    public void changeStatus(GuestDto guestDto) throws Exception;
+
+    public GuestDto getGuest(GuestDto guestDto) throws Exception;
+
 }
